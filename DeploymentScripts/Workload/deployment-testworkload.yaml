@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo
+  labels:
+    aadpodidbinding: $IDENTITY_NAME
+spec:
+  containers:
+  - name: demo
+    image: mcr.microsoft.com/oss/azure/aad-pod-identity/demo:v1.8.4
+    args:
+      - --subscription-id=${SUBSCRIPTION_ID}
+      - --resource-group=${IDENTITY_RESOURCE_GROUP}
+      - --identity-client-id=${IDENTITY_CLIENT_ID}
+  nodeSelector:
+    kubernetes.io/os: linux
