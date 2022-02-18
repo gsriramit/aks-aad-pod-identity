@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export SUBSCRIPTION_ID="695471ea-1fc3-42ee-a854-eab6c3009516"
+export SUBSCRIPTION_ID=""
 RESOURCEGROUP_LOCATION="EastUS"
 RESOURCEGROUP_NAME="rg-akspodidentity-dev-01"
 CLUSTER_NAME="aks-dev-01"
