@@ -5,6 +5,10 @@ This repository contains scripts and instructions to perform a quick deployment 
 
 ![Security Baseline Architecture - Pod Managed Identity-Flow Diagram](https://user-images.githubusercontent.com/13979783/155840253-13cc3e0b-872d-4868-9081-09b555520cd2.png)
 
+## Deployment Scripts
+1. [Standard Mode](DeploymentScripts/StandardMode/DeployAADPodIdentity.sh)
+2. MangedMode - To be implemented
+
 ## Output Dump
 
 Assignment of the "Managed Identity Operator" role to the Agent Pool ClientID
